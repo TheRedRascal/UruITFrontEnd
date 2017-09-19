@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+            <div class="login-container">
+                <div id="output"></div>
+                <div class="form-box">
+                    <div class="form-group">
+                        <h2>Round : {{round}}</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Your Turn : {{activePlayer}}</h2>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Select Move:</h2>
+                        <select [(ngModel)]="selectedValue" class="form-control" id="input-select">
+                                        <option  value="default">Select one</option>
+                                        <option  value="R">Rock</option>
+                                        <option  value="P">Paper</option>
+                                        <option  value="S">Scissors</option>
+                                    </select>
+                    </div>
+
+                    <div class="col-xs-4 form-group pull-right">
+                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Ok" [disabled]="!CanPlay()"
+                            (click)="SetMove()">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+            <table class="table customtable">
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Winner</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let score of scores">
+                        <td>{{score.round}}</td>
+                        <td>{{score.winner}}</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>

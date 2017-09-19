@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <ul>
+                <li>
+                    <a>
+                        <h2>Rule #1</h2>
+                        <p>Both players names are required.</p>
+                    </a>
+                </li>
+
+                <li>
+
+                    <a>
+                        <h2>Rule #2</h2>
+                        <p>Player-1 and Player-2 names must be different.</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-8">
+
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-login">
+                        <div class="panel-body">
+                            <div class="row"> 
+                                <div class="col-lg-12">
+
+                                    <div class="form-group">
+                                        <input type="text" name="username" [(ngModel)]="players.player1" id="username" tabindex="1" class="form-control" placeholder="Player One"
+                                            value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="username" [(ngModel)]="players.player2" id="username" tabindex="1" class="form-control" placeholder="Player Two"
+                                            value="">
+                                    </div>
+
+                                    <div class="col-xs-6 form-group pull-right">
+                                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Start"
+                                            [disabled]="!CanPlay()" (click)="NavigateToGame()">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

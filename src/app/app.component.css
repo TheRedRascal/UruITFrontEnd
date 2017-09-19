@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Carton';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Carton'), url(../assets/Fonts/Carton.woff) format('woff');
+}
+
+#main-div
+{
+    background-image: url(../assets/Images/PageBackGround.jpg);
+    position:fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#page-title
+{
+    font-family: 'Carton';
+    color:firebrick;
+    margin: auto;
+    width: 30%;
+    padding: 35px 0px 0px 0px;
+}
+
+#rules
+{
+    background-color: rgba(255,0,0,0.4);
+    border-color: black;
+    border-width:1px;
+    border-style:solid;
+}
+
+#player-info
+{
+    margin: auto;
+}
+
+/* Title */
+
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+
+.wrap {
+    padding: 5em 0.5em;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8em;
+    white-space: nowrap;
+    font-size: 12vw;
+    z-index: 1000;
+    font-family: 'Bangers', cursive;
+    text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);   
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#menu{
+    text-align: center;
+    z-index: 1000;
+    margin: 0 auto;
+}
+
+.active {
+    background-color: #4CAF50;
+}
